@@ -1,0 +1,99 @@
+<div class="welcome-area" id="welcome" style="background-color:green">
+    <div class="welcome-image"> 
+        
+    </div>
+    <div class="header-text">
+     <div class="container">
+         <div class="row">
+             <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                 <h1>We won't let anyone <br> <strong>Starve</strong>
+                 </h1>
+                 <p>This is the intiative started by group of college student<br> 
+                    to do their best to end hunger</p>
+                     <a class="btnLink" href="mailto:shubhamthakurgta@gmail.com" class="main-button-slider">Contact Us</a>
+             </div>
+         </div>
+     </div>
+    </div>
+ </div>
+ <div class="fluid-container wave-box my-5">
+    <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+    </svg>
+</div>
+
+<div class="container container-distance">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="counter">
+                <div class="counter-icon">
+                    <fa-icon [icon]="fadonate"></fa-icon>
+                </div>
+                <span class="counter-value">700</span>
+                <h3>Total Donation </h3>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="counter blue">
+                <div class="counter-icon">
+                    <fa-icon [icon]="fadriver"></fa-icon>
+                </div>
+                <span class="counter-value">220</span>
+                <h3>Donation on the Way</h3>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="counter pink">
+                <div class="counter-icon">
+                    <fa-icon [icon]="fabrief"></fa-icon>
+                </div>
+                <span class="counter-value">1</span>
+                <h3>Sponsors</h3>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="counter purple">
+                <div class="counter-icon">
+                    <fa-icon [icon]="fauser"></fa-icon>
+                </div>
+                <span class="counter-value">4</span>
+                <h3>Community Partners</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container container-distance">
+  
+ <!-- ***** FAQs Start ***** -->
+ <section class="section " id="faqs" >
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <strong class="heading">FAQs</strong>
+            </div>
+        </div>
+        <div class="row justify-content-center" *ngFor="let temp of faqs;let i = index">
+            <div class="col-10 col-lg-8 accordion" data-aos="fade-up" data-aos-duration="400">
+                <h5>{{temp.question}}</h5>
+                <div class="plus-icon"><fa-icon (click)="displayThis(i)" [icon]="faplus" ></fa-icon></div>
+            </div>
+            <div *ngIf=temp.display class="col-10 col-lg-8 panel">
+                <p>{{temp.answer}}</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ***** FAQs End ***** -->
+</div>
