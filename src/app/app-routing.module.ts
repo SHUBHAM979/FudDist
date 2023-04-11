@@ -3,9 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { MainComponent } from './main/main.component';
 import { PrizeComponent } from './prize/prize.component';
 import { VisionPageComponent } from './vision-page/vision-page.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   {
@@ -17,9 +18,14 @@ const routes: Routes = [
     component:ErrorPageComponent
   },
   {
-    path:'main',
-    component:MainComponent
+    path:'login',
+    component:LoginComponent
   },
+  {
+    path:'signup',
+    component:SignupComponent
+  },
+
   {
     path:'vision',
     component:VisionPageComponent

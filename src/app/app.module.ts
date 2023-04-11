@@ -10,9 +10,15 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { VisionPageComponent } from './vision-page/vision-page.component';
 import { PrizeComponent } from './prize/prize.component';
-import { MainComponent } from './main/main.component';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { LogComponent } from './log/log.component';
+import { CloudinaryModule } from '@cloudinary/ng';
 
 @NgModule({
   declarations: [
@@ -24,13 +30,18 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AboutPageComponent,
     VisionPageComponent,
     PrizeComponent,
-    MainComponent
+    LoginComponent,
+    SignupComponent,
+    LogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    HttpClientModule,
+    CloudinaryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

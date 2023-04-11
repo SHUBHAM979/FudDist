@@ -2,10 +2,18 @@
     <div class="col d-flex justify-content-center">
         <ul class="d-flex justify-content-center">
             <li><a href="#" class="link" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Home</a></li>
-            <li><a href="#" class="link" routerLinkActive="active-link" routerLink="/main">Main</a></li>
             <li><a href="#" class="link" routerLinkActive="active-link" routerLink="/vision">Vision</a></li>
             <li><a href="#" class="link" routerLinkActive="active-link" routerLink="/prize">Prize</a></li>
             <li><a href="#" class="link" routerLinkActive="active-link" routerLink="/about">About</a></li>
+            <li > <div ckass ="name" *ngIf = "!flag ; else fotur"><a href="#" class="link" routerLinkActive="active-link" routerLink="/signup">Signup</a></div>
+            <ng-template class ="name" style=" color:white;
+            text-decoration: none;
+            display: block;
+            padding: 17px 19px;
+            text-align: center;
+            text-decoration: none;
+            z-index: 100;" #fotur> {{username}}</ng-template> </li>
         </ul>
     </div>
 </div>
+
