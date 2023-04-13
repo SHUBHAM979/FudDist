@@ -25,6 +25,8 @@ export interface User {
 export class UserlistService {
     userlist: User[] = [];
     loggedinuser= new EventEmitter();
+    loggedInuser= new EventEmitter();
+    isLoggedIn= new EventEmitter();
 
   constructor(private http : HttpClient) {
     this.userlist = [];
@@ -76,6 +78,14 @@ export class UserlistService {
   loggedin(name : string){ 
     this.loggedinuser.emit(name);
 
+  }
+
+  loggedemail(email : string){ 
+    this.loggedInuser.emit(email);
+  }
+
+  isloggedIn() {
+    return this.isLoggedIn.emit(true);
   }
   
 }

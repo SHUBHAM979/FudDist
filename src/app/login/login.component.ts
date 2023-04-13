@@ -33,6 +33,8 @@ export class LoginComponent implements OnInit {
       alert('Login Successfull');
       console.log(isUser.username);
       this.userListservice.loggedin(isUser.username);
+      this.userListservice.loggedemail(isUser.email);
+      this.userListservice.isloggedIn();
       this.router.navigate(['/']);
       
     } else {

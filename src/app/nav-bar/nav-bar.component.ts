@@ -7,10 +7,15 @@ import { UserlistService } from '../services/userlist.service';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-
+ isloggedin : boolean = false;
   constructor(
     private router:Router, private userlistservice :UserlistService
-  ) {}
+  ) {
+
+    userlistservice.isLoggedIn.subscribe ( response=> {
+      this.isloggedin = true;
+    } );
+  }
     username : string = '';
     flag : boolean = false;
   ngOnInit(): void {

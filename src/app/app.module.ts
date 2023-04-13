@@ -19,6 +19,9 @@ import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { LogComponent } from './log/log.component';
 import { CloudinaryModule } from '@cloudinary/ng';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/shopping-list-edit.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { CloudinaryModule } from '@cloudinary/ng';
     PrizeComponent,
     LoginComponent,
     SignupComponent,
-    LogComponent
+    LogComponent,
+    ShoppingListComponent,
+    ShoppingListEditComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

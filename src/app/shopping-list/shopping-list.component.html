@@ -1,0 +1,48 @@
+<div class="welcome-area" id="welcome" style="background-color:gold">
+    <div class="welcome-image"> 
+        
+    </div>
+    <div class="header-text">
+     <div class="container">
+         <div class="row">
+             <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                 <h1>We provide the best <strong>strategy</strong><br>to grow up your <strong>business</strong>
+                 </h1>
+                 <p>Softy Pinko is a professional Bootstrap 4.0 theme designed by Template Mo
+                     for your company at absolutely free of charge</p>
+                 <a class="btnLink" href="mailto:shivamthalwal@gmail.com" class="main-button-slider">Contact Us</a>
+             </div>
+         </div>
+     </div>
+    </div>
+ </div>
+ <div class="fluid-container wave-box my-5">
+    <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+    </svg>
+</div>
+
+<div>
+<div class =" to-right">
+<div class = 'row'>
+    <div class = "col-xs-10">
+        <app-shopping-list-edit ></app-shopping-list-edit>
+        <hr>
+        <ul class ="list-group">
+            <a  class = "list-group-item" style = "cursor: pointer"
+            *ngFor ="let ingredient of ingredients"
+            > 
+            {{ingredient.name}} ({{ingredient.amount}})
+        </a>
+        </ul>
+    </div>
+</div>
+</div>

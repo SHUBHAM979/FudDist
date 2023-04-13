@@ -2,6 +2,7 @@
     <div class="col d-flex justify-content-center">
         <ul class="d-flex justify-content-center">
             <li><a href="#" class="link" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Home</a></li>
+            <li *ngIf = "isloggedin" ><a href="#" class="link" routerLinkActive="active-link" routerLink="/order">Order</a></li>
             <li><a href="#" class="link" routerLinkActive="active-link" routerLink="/vision">Vision</a></li>
             <li><a href="#" class="link" routerLinkActive="active-link" routerLink="/prize">Prize</a></li>
             <li><a href="#" class="link" routerLinkActive="active-link" routerLink="/about">About</a></li>

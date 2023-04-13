@@ -7,6 +7,7 @@ import { PrizeComponent } from './prize/prize.component';
 import { VisionPageComponent } from './vision-page/vision-page.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,11 @@ const routes: Routes = [
     path:'about',
     component:AboutPageComponent
   },
+  {
+    path:'order',
+    component: ShoppingListComponent
+  }
+  ,
   {
     path:'**',
     redirectTo:'page-not-found',
