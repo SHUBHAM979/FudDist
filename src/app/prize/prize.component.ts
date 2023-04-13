@@ -17,12 +17,12 @@ export interface prize {
 })
 export class PrizeComponent implements OnInit {
   prizes : prize[] = [ {
-    name : "Sahil lagwal",
-    image: 'https://c4.wallpaperflare.com/wallpaper/915/721/266/scarlett-johansson-black-widow-captain-america-civil-war-wallpaper-preview.jpg',
+    name : "Himadri Hostel(NIT Hamipur)",
+    image: 'https://images.shiksha.com/mediadata/images/1550666050phpzCvMiP.png',
     donationInKg : "10",
     previousDonation : "200",
     lastDonation : "12/08/2022",
-    contact : "1234567890"  
+    contact : "01972 246123"  
   }]
 
   constructor() { }
