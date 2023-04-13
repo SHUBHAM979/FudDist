@@ -3,14 +3,15 @@
 welcome
 --------------------------------------------- 
 */
+
 .welcome-image {
-	filter:blur(5px) grayscale(50%) drop-shadow(8px 8px 10px gray) opacity(50%);
+	filter:blur(10px) grayscale(50%) drop-shadow(8px 8px 10px rgb(205, 19, 19)) opacity(100%);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover; 
 	height: 100vh;
 	width: 100vw;
-	background-image: url('background.jpg');
+	background-image: url('background.jpeg');
 }
 
   
@@ -23,11 +24,13 @@ welcome
   }
 
 
+
+
 /* -----------------
  counter css start 
  ------------------*/
 .counter{
-    color: #f27f21;
+    color: #ce7e3c;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     height: 190px;
