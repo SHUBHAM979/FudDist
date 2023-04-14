@@ -1,27 +1,102 @@
-# WasteFoodManagment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+# Food Management
 
-## Development server
+"Surplus to Service: Linking Excess Food to Those in Need"
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Client:** Typerscript, Angular, CSS, Bootstrap, Cloudinary
 
-## Build
+**Server:** Firebase
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## API Reference
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Get all order
 
-## Running end-to-end tests
+```http
+  GET https://waste-c95eb-default-rtdb.asia-southeast1.firebasedatabase.app/orders.json
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
 
-## Further help
+#### Post order
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```http
+  Post https://waste-c95eb-default-rtdb.asia-southeast1.firebasedatabase.app/orders.json
+
+```
+
+#### Get Users
+
+```http
+  GET https://waste-c95eb-default-rtdb.asia-southeast1.firebasedatabase.app/userlist.json
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+
+
+
+## Deployment
+
+To Install node dependencies
+
+```CMD
+npm -i 
+  
+```
+
+To Install Bootstrap
+
+```CMD
+npm i bootstrap@5.3.0-alpha3
+  
+```
+
+To Install cloudinary
+
+```CMD
+npm i cloudinary
+  
+```
+
+To deploy
+
+```CMD
+npm start
+  
+```
+
+
+## Documentation
+
+[SRS & Architecture](https://drive.google.com/drive/u/0/folders/1xrUIuvyawpB87qIZn1JWY5QIvG_uVbYk)
+
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_KEY`
+
+`ANOTHER_API_KEY`
+
+
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+
+## Screenshots
+
+
+

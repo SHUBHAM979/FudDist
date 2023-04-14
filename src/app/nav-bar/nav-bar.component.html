@@ -7,7 +7,7 @@
             <li><a href="#" class="link" routerLinkActive="active-link" routerLink="/prize">Prize</a></li>
             <li><a href="#" class="link" routerLinkActive="active-link" routerLink="/about">About</a></li>
             <li > <div *ngIf = "!flag ; else fotur"><a href="#" class="link" routerLinkActive="active-link" routerLink="/login">Sign In</a></div>
-            <ng-template  #fotur> <div><a href="#" class="link" routerLinkActive="active-link" >{{username}}</a></div></ng-template> </li>
+            <ng-template  #fotur> <div><a href="#" class="link" routerLinkActive="active-link" routerLink="/login" >{{username}}</a></div></ng-template> </li>
         </ul>
     </div>
 </div>
